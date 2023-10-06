@@ -15,6 +15,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: async () => {
+          const res = await fetch("/slider.json");
+          const date = await res.json();
+          return date;
+        },
       },
       {
         path: "/contact",

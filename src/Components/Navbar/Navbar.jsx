@@ -58,7 +58,7 @@ const Navbar = () => {
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7"
+                className="sm:h-7 sm:w-7 w-5 h-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -79,9 +79,10 @@ const Navbar = () => {
             </ul>
           </div>
           <Link className=" normal-case text-xl">
-            <p className="text-2xl sm:text-4xl font-black text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Social Events
-            </p>
+            <img
+              src="	https://sport.7uptheme.net/wp-content/uploads/2017/07/logo.png"
+              alt=""
+            />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
