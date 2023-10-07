@@ -26,7 +26,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog></Blog>,
+        element: (
+          <PrivateRoute>
+            <Blog></Blog>
+          </PrivateRoute>
+        ),
         loader: async () => {
           const res = await fetch("/blog.json");
           const data = await res.json();
