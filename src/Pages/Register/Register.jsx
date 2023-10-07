@@ -40,7 +40,7 @@ const Register = () => {
       .catch((err) => toast.error(err.message));
   };
   return (
-    <div>
+    <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 py-5">
       <section className=" my-10 ">
         <div className="flex flex-col items-center justify-center px-2 py-4 mx-auto  ">
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">

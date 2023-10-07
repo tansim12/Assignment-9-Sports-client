@@ -1,32 +1,32 @@
 [
   {
     "id": "1",
-    "title": "Item 1",
+    "title": "Their Stories and Achievements",
     "image_url": "https://i.ibb.co/vLVCz4H/photo-1589801258579-18e091f4ca26-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec velit ut odio bibendum elementum a a odio. Suspendisse potenti. Proin nec mauris velit. Duis non commodo erat. Suspendisse at bibendum quam. Maecenas gravida risus non tincidunt varius. Curabitur eu est id erat congue volutpat. Nullam cursus risus vel sapien egestas, vel fermentum nisi vulputate. Sed vitae dictum nulla. Fusce eu volutpat purus. Donec vehicula odio nec turpis fringilla congue. Nunc ut odio vel odio tristique tincidunt. Morbi auctor viverra magna, a venenatis lorem dignissim eu."
+    "description": "Enhance your cricket skills with expert insights on batting, bowling, fielding, and teamwork. This comprehensive guide is a must-read for cricket enthusiasts seeking to master the sport."
   },
   {
     "id": "2",
-    "title": "Item 2",
+    "title": "Tips and Techniques",
     "image_url": "https://i.ibb.co/tDyD4Nz/photo-1567943346767-72780dd14cd5-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
-    "description": "Pellentesque euismod euismod erat, ut feugiat nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur blandit tortor eu arcu bibendum, nec pharetra enim convallis. Duis vehicula lorem at justo varius ultricies. Aenean lacinia est non neque euismod congue. Suspendisse cursus eu..."
+    "description": "Explore the world of cricket legends, reliving their remarkable journeys and unforgettable moments in the game's history, from thrilling matches to record-breaking performances."
   },
   {
     "id": "3",
-    "title": "Item 3",
+    "title": "A Unique Sporting Experience",
     "image_url": "https://i.ibb.co/tJMmsXb/photo-1482614312710-79c1d29bda2a-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
-    "description": "Integer id cursus arcu. Quisque tincidunt, purus a tristique pellentesque, velit libero tincidunt sem, vel vestibulum dolor tortor sed justo. Fusce ac quam eget velit vehicula bibendum nec vel sem. Proin in congue tortor, a aliquam libero. Praesent gravida, odio nec congue feugiat, neque elit elementum ex, ut..."
+    "description": "Tanis Ball offers a fresh take on traditional sports, blending strategy and athleticism. Experience the excitement of this innovative game today!"
   },
   {
     "id": "4",
-    "title": "Item 4",
+    "title": "Stories of Triumph and Glory in Boxing",
     "image_url": "https://i.ibb.co/7RLtMPR/photo-1525680996651-0222228be6f0-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
-    "description": "Donec a sapien non erat fringilla rhoncus. Proin ut metus nec libero blandit blandit vel sed velit. Sed scelerisque a dui eget facilisis. Fusce interdum risus vel erat volutpat, a tincidunt odio fermentum. Integer vel quam odio. Sed non semper tellus..."
+    "description": "Inside the Ring  offers a ringside seat to the world of boxing, showcasing stories of determination, victories, and the heart-pounding drama of the sport"
   },
   {
     "id": "5",
-    "title": "Item 5",
+    "title": "A Journey through Horse Racing",
     "image_url": "https://i.ibb.co/xYqd4yj/photo-1495543377553-b2aba1f925d7-crop-faces-edges-cs-tinysrgb-fit-crop-fm-jpg-ixid-M3wx-Mj-A3f-DB8-M.jpg",
-    "description": "Mauris condimentum vehicula arcu, sit amet tincidunt nisi convallis vel. Vivamus nec velit quis libero ultrices congue. Sed quis est quis felis feugiat bibendum in vel metus. Etiam eget libero in nisi eleifend fermentum. Fusce accumsan metus eu velit..."
+    "description": "Experience the thrill of horse racing as you embark on a journey through the world of magnificent steeds, passionate jockeys, and exhilarating races."
   }
 ]
