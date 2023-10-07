@@ -20,7 +20,7 @@ const ServiceSingleDetailsCard = () => {
     setDataMoment(findData?.moment);
   }, [findData]);
 
-  console.log(dataMoment);
+
 
   return (
     <div className="">

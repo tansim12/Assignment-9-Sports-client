@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Banner from "../../Components/Banner/Banner";
 import Services from "../../Components/Services/Services";
+import Featured from "../../Components/Featured/Featured";
 
 const Home = () => {
   const data = useLoaderData();
@@ -23,6 +24,11 @@ const Home = () => {
           <hr className="w-[200px] sm:w-[350px] mx-auto mb-7 border-2 border-black" />
           <Services></Services>
         </div>
+      </section>
+
+      {/* featured section  */}
+      <section className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 py-5 my-10">
+        <Featured></Featured>
       </section>
     </>
   );
