@@ -12,7 +12,7 @@ const Home = () => {
       <div>
         <Navbar></Navbar>
       </div>
-      <div className="my-16 md:my-0 ">
+      <div className="mt-[100px] mb-5 md:my-0 ">
         <Banner data={data}></Banner>
       </div>
       {/* service section  */}

@@ -20,17 +20,17 @@ const router = createBrowserRouter([
         element: <Home></Home>,
         loader: async () => {
           const res = await fetch("/slider.json");
-          const date = await res.json();
-          return date;
+          const data = await res.json();
+          return data;
         },
       },
       {
         path: "/blog",
         element: <Blog></Blog>,
         loader: async () => {
-          const res = await fetch("/slider.json");
-          const date = await res.json();
-          return date;
+          const res = await fetch("/blog.json");
+          const data = await res.json();
+          return data;
         },
       },
       {

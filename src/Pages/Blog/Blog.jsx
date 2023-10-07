@@ -1,11 +1,16 @@
-
+import { useLoaderData } from "react-router-dom";
+import BlogDetails from "./BlogDetails";
 
 const Blog = () => {
-    return (
-        <div>
-            blog
-        </div>
-    );
+  const data = useLoaderData();
+
+  return (
+    <div className="mb-20">
+      {data?.map((item) => (
+        <BlogDetails key={item?.id} item={item}></BlogDetails>
+      ))}
+    </div>
+  );
 };
 
 export default Blog;
