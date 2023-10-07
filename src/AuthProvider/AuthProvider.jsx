@@ -36,6 +36,7 @@ const AuthProvider = ({ children }) => {
 
   // login
   const login = (email, password) => {
+    setUserLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
@@ -54,7 +55,7 @@ const AuthProvider = ({ children }) => {
       unsubscribe();
     };
   }, []);
-  console.log(user);
+
 
   const info = {
     googleLogin,

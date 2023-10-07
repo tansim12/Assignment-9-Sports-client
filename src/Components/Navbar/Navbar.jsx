@@ -48,10 +48,24 @@ const Navbar = () => {
           Contact
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to={"/blog"}
+          className={({ isActive, isPending }) =>
+            isActive
+              ? "active font-bold"
+              : isPending
+              ? "pending"
+              : " text-black font-bold"
+          }
+        >
+          Blog
+        </NavLink>
+      </li>
     </>
   );
   return (
-    <div>
+    <div className="my-7">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -73,14 +87,14 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-2"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
             >
               {links}
             </ul>
           </div>
           <Link className=" normal-case text-xl">
             <img
-              src="	https://sport.7uptheme.net/wp-content/uploads/2017/07/logo.png"
+              src="https://sport.7uptheme.net/wp-content/uploads/2017/07/logo.png"
               alt=""
             />
           </Link>

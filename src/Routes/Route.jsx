@@ -5,6 +5,9 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import ServiceSingleDetailsCard from "../Components/Services/ServiceSingleDetailsCard";
+import PrivateRoute from "./PrivateRoute";
+import Blog from "../Pages/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +25,34 @@ const router = createBrowserRouter([
         },
       },
       {
+        path: "/blog",
+        element: <Blog></Blog>,
+        loader: async () => {
+          const res = await fetch("/slider.json");
+          const date = await res.json();
+          return date;
+        },
+      },
+      {
+        path: "/serviceDetails/:id",
+        element: (
+          <PrivateRoute>
+            <ServiceSingleDetailsCard></ServiceSingleDetailsCard>
+          </PrivateRoute>
+        ),
+        loader: async () => {
+          const res = await fetch("/service.json");
+          const date = await res.json();
+          return date;
+        },
+      },
+      {
         path: "/contact",
-        element: <Contact></Contact>,
+        element: (
+          <PrivateRoute>
+            <Contact></Contact>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",

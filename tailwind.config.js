@@ -2,7 +2,8 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   daisyui: {
-    themes: [
+    themes:
+     [
       {
         mytheme: {
           primary: "#552499",
