@@ -14,10 +14,10 @@ const Home = () => {
       <Helmet>
         <title>Home</title>
       </Helmet>
-      <div>
+      <div className="max-w-screen-xl">
         <Navbar></Navbar>
       </div>
-      <div className="mt-[100px] mb-5 md:my-0 ">
+      <div className="mt-[70px] md:mt-0">
         <Banner data={data}></Banner>
       </div>
       {/* service section  */}

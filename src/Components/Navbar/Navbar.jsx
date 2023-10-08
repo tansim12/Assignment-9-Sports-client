@@ -25,10 +25,10 @@ const Navbar = () => {
           to={"/"}
           className={({ isActive, isPending }) =>
             isActive
-              ? "active font-bold"
+              ? "active font-bold text-xs md:text-base"
               : isPending
               ? "pending"
-              : " text-black font-bold"
+              : " text-black font-bold text-xs md:text-base"
           }
         >
           Home
@@ -39,10 +39,10 @@ const Navbar = () => {
           to={"/contact"}
           className={({ isActive, isPending }) =>
             isActive
-              ? "active font-bold"
+              ? "active font-bold text-xs md:text-base"
               : isPending
               ? "pending"
-              : " text-black font-bold"
+              : " text-black font-bold text-xs md:text-base"
           }
         >
           Contact
@@ -53,10 +53,10 @@ const Navbar = () => {
           to={"/blog"}
           className={({ isActive, isPending }) =>
             isActive
-              ? "active font-bold"
+              ? "active font-bold text-xs md:text-base"
               : isPending
               ? "pending"
-              : " text-black font-bold"
+              : " text-black font-bold text-xs md:text-base"
           }
         >
           Blog
@@ -69,7 +69,7 @@ const Navbar = () => {
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="sm:h-7 sm:w-7 w-5 h-5"
@@ -87,7 +87,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
+              className="menu menu-sm dropdown-content z-[1] p-1 shadow bg-base-100 rounded-box w-52 "
             >
               {links}
             </ul>
@@ -99,7 +99,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal px-1 gap-5">{links}</ul>
         </div>
         <div className="navbar-end">
