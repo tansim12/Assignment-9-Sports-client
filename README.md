@@ -5,6 +5,5 @@
 - Desing by gradient in useing some section . So this project has been so much prety .
 - I was useing private route in this project . 
 
-
-
-  #[Live Link](https://roaring-sundae-f5308f.netlify.app/) 
+# Live Link : (https://roaring-sundae-f5308f.netlify.app/) 
+[Live Link](https://roaring-sundae-f5308f.netlify.app/) 
