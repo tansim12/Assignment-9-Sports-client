@@ -3,6 +3,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Banner from "../../Components/Banner/Banner";
 import Services from "../../Components/Services/Services";
 import Featured from "../../Components/Featured/Featured";
+import FAQs from "../../Components/FAQs/FAQs";
 
 const Home = () => {
   const data = useLoaderData();
@@ -29,6 +30,10 @@ const Home = () => {
       {/* featured section  */}
       <section className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 py-5 my-10">
         <Featured></Featured>
+      </section>
+      {/* FAQS  */}
+      <section className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 py-5 ">
+        <FAQs></FAQs>
       </section>
     </>
   );
