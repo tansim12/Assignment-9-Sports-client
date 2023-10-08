@@ -66,10 +66,9 @@ const BlogDetails = ({ item }) => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center pt-4 space-x-4 align-center" 
-          
-          data-aos="zoom-out-left"
-          
+          <div
+            className="flex justify-center pt-4 space-x-4 align-center"
+            data-aos="zoom-in"
           >
             <a
               rel="noopener noreferrer"
