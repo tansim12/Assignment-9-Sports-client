@@ -15,12 +15,12 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer</b>  </summary>
+<details><summary><b>A : {}</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i> let greeting is undefined . After that greeting is defined by {} . So last out is {} </i>
 
 </p>
 </details>
@@ -40,12 +40,13 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b> C : "12"</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>a is a number and b is a string .If is number and string concatenation then they added
+successively . So answer is "12" </i>
 
 </p>
 </details>
@@ -66,12 +67,12 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>A: ['🍕', '🍫', '🥑', '🍔'] </b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>My main food array right here because info.favoriteFood change value their onfo variable. So their change value no effect main food array </i>
 
 </p>
 </details>
@@ -91,12 +92,12 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>B: Hi there, undefined</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>Because sayHi argument is undefined .So , name props received no props means undefined . </i>
 
 </p>
 </details>
@@ -119,12 +120,12 @@ console.log(count);
 - C: 3
 - D: 4
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>C: 3</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>There is count 0 number , and check (num) is truthy and falsy , if num is truthy then number is counted . so answer is 3 </i>
 
 </p>
 </details>
