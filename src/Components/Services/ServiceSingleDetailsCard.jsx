@@ -20,8 +20,6 @@ const ServiceSingleDetailsCard = () => {
     setDataMoment(findData?.moment);
   }, [findData]);
 
-
-
   return (
     <div className="">
       <section className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 my-10">
@@ -120,7 +118,7 @@ const ServiceSingleDetailsCard = () => {
                 {category_name}
               </p>
               {dataMoment?.map((item, index) => (
-                <div key={index} className="my-5 ">
+                <div key={index} className="my-5 " data-aos="flip-down">
                   <img src={item?.img} className="rounded-lg w-full" alt="" />
                 </div>
               ))}

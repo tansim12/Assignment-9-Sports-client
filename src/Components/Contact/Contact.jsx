@@ -16,8 +16,13 @@ const Contact = () => {
               alt="logo"
               className="w-full h-full absolute inset-0"
             />
-           
-            <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md ">
+
+            <div
+              className="bg-white relative flex flex-wrap py-6 rounded shadow-md "
+              data-aos="fade-right"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="lg:w-1/2 px-6">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                   ADDRESS

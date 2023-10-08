@@ -5,7 +5,9 @@ const Footer = () => {
     <div>
       <div className="relative mt-16  ">
         {/* svg div  */}
-        <div>
+        <div  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="800" >
           <svg
             className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-neutral "
             preserveAspectRatio="none"

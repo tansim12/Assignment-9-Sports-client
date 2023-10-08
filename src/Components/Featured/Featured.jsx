@@ -1,6 +1,6 @@
 const Featured = () => {
   return (
-    <div>
+    <div >
       <div className="container my-24 mx-auto md:px-6">
         <section className="mb-32">
           <h2 className="mb-12 text-center text-3xl font-bold">
@@ -9,12 +9,12 @@ const Featured = () => {
 
           <div className="flex flex-wrap items-center">
             <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-6 lg:mb-0 lg:w-5/12">
-              <div
+              <div data-aos="zoom-out-right"
                 className="relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
                 data-te-ripple-init
                 data-te-ripple-color="light"
               >
-                <img
+                <img 
                   src="https://i.ibb.co/ZTG0tZZ/abstract-background-with-grunge-pattern-29096-1491.jpg"
                   className="w-full "
                 />
