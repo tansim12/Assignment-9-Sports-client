@@ -1,8 +1,9 @@
-# React + Vite
+## My Project main features
+- My project base in react . All project is dynamic .
+- There is useing routeing system in hole project .
+- Useing carusel Autoplay in banner section .
+- Desing by gradient in useing some section . So this project has been so much prety .
+- I was useing private route in this project . 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Live Link : (https://roaring-sundae-f5308f.netlify.app) 
+[Live Link](https://roaring-sundae-f5308f.netlify.app/) 
