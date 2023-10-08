@@ -4,12 +4,16 @@ import Banner from "../../Components/Banner/Banner";
 import Services from "../../Components/Services/Services";
 import Featured from "../../Components/Featured/Featured";
 import FAQs from "../../Components/FAQs/FAQs";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const data = useLoaderData();
 
   return (
     <>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       <div>
         <Navbar></Navbar>
       </div>

@@ -1,13 +1,10 @@
 import { GrLinkNext } from "react-icons/gr";
-import { Link } from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 const ServicesCard = ({ item }) => {
-  const { category_name, img,  price, description,} =
-    item;
+  const { category_name, img, price, description } = item;
   return (
-    <div data-aos="fade-down"
-    data-aos-anchor-placement="top-center">
+    <div data-aos="fade-down" data-aos-anchor-placement="top-center">
       <div className="rounded-md shadow-md  dark:bg-gradient-to-r from-pink-500 to-purple-500 dark:text-gray-100">
         <div className="flex items-center justify-between p-3 my-3">
           <p className="text-xl font-extrabold">{category_name}</p>
@@ -23,9 +20,10 @@ const ServicesCard = ({ item }) => {
             </svg>
           </button>
         </div>
-        <img data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"
+        <img
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
           src={img}
           alt=""
           className="object-cover object-center w-full h-72 dark:bg-gray-500"

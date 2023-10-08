@@ -3,6 +3,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { MdAttachMoney } from "react-icons/md";
 
 import Rating from "react-rating";
+import { Helmet } from "react-helmet-async";
+
 
 const ServiceSingleDetailsCard = () => {
   const data = useLoaderData();
@@ -22,6 +24,7 @@ const ServiceSingleDetailsCard = () => {
 
   return (
     <div className="">
+      <Helmet><title>Services</title></Helmet>
       <section className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 my-10">
         <div className="grid md:grid-cols-4 gap-5 ">
           <div className="col-span-3">
