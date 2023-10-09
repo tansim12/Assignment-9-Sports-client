@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 const ServicesCard = ({ item }) => {
   const { category_name, img, price, description } = item;
   return (
-    <div
-     data-aos="fade-down" 
-    
-    data-aos-anchor-placement="top-center">
+    <div data-aos="fade-down" data-aos-anchor-placement="top-center">
       <div className="rounded-md shadow-md  dark:bg-gradient-to-r from-pink-500 to-purple-500 dark:text-gray-100">
         <div className="flex items-center justify-between p-3 my-3">
           <p className="text-xl font-extrabold">{category_name}</p>

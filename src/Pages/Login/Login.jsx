@@ -1,13 +1,17 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import LoginWith from "./LoginWith";
 import useAuthContext from "../../useAuthContext";
 import toast, { Toaster } from "react-hot-toast";
+import { useRef } from "react";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { login } = useAuthContext();
+  const { login, resetPassword } = useAuthContext();
   const patten = /^(?=.*[A-Z])(?=.*[@#$%^&+=!]).{6,}$/;
   const capitalLetter = /[A-Z]/;
+  const emailRef = useRef(null);
+  const loc = useLocation();
+
   // handleLogin
   const handleLogin = (e) => {
     e.preventDefault();
@@ -28,12 +32,18 @@ const Login = () => {
     login(email, password)
       .then(() => {
         toast.success("Login successfully");
-
-        {
-          navigate("/");
-        }
+        navigate(loc?.state ? loc?.state : "/");
       })
       .catch((err) => toast.error("User invalid", err.message));
+  };
+
+  // handleForgotPassword
+  const handleForgotPassword = () => {
+    resetPassword(emailRef.current.value)
+      .then(() => {
+        toast.success("Forgot password successfully please check your email");
+      })
+      .catch((err) => toast.error(err.message));
   };
 
   return (
@@ -53,6 +63,7 @@ const Login = () => {
                 <input
                   type="email"
                   name="email"
+                  ref={emailRef}
                   required
                   id="email"
                   placeholder="leroy@jenkins.com"
@@ -62,13 +73,13 @@ const Login = () => {
               <div>
                 <div className="flex justify-between mb-2">
                   <label className="text-sm">Password</label>
-                  <a
+                  <Link
                     rel="noopener noreferrer"
-                    href="#"
+                    onClick={handleForgotPassword}
                     className="text-xs hover:underline dark:text-gray-400"
                   >
                     Forgot password?
-                  </a>
+                  </Link>
                 </div>
                 <input
                   type="password"

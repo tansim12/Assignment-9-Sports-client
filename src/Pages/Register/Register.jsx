@@ -1,16 +1,16 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LoginWith from "../Login/LoginWith";
 import useAuthContext from "../../useAuthContext";
 import toast, { Toaster } from "react-hot-toast";
 
 const Register = () => {
-  const { createUser } = useAuthContext();
-  //   const navigate = useNavigate();
+  const { createUser, profileUpdate } = useAuthContext();
+
   const patten = /^(?=.*[A-Z])(?=.*[@#$%^&+=!]).{6,}$/;
   const capitalLetter = /[A-Z]/;
   const handleRegister = (e) => {
     e.preventDefault();
-    // const name = e.target.name.value;
+    const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
     const confirmPassword = e.target.confirmPassword.value;
@@ -34,8 +34,8 @@ const Register = () => {
     createUser(email, password)
       .then(() => {
         toast.success("Register successfully");
+        profileUpdate(name, undefined);
         e.target.reset();
-        //   {navigate("/login");}
       })
       .catch((err) => toast.error(err.message));
   };

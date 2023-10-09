@@ -2,10 +2,14 @@ import {
   GithubAuthProvider,
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
+  deleteUser,
   onAuthStateChanged,
+  sendEmailVerification,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase.config";
@@ -45,6 +49,29 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
+  // deleteAccount
+  const deleteAccount = () => {
+    return deleteUser(auth.currentUser);
+  };
+
+  // resetPassword
+  const resetPassword = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
+  // verifyAccount
+  const verifyAccount = () => {
+    return sendEmailVerification(auth.currentUser);
+  };
+
+  // profileUpdate
+  const profileUpdate = (name, img) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: img,
+    });
+  };
+
   // observe
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -56,7 +83,6 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
-
   const info = {
     googleLogin,
     githubLogin,
@@ -65,6 +91,10 @@ const AuthProvider = ({ children }) => {
     createUser,
     login,
     logOut,
+    deleteAccount,
+    profileUpdate,
+    verifyAccount,
+    resetPassword,
   };
   return <AuthContext.Provider value={info}>{children}</AuthContext.Provider>;
 };

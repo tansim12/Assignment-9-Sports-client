@@ -14,7 +14,7 @@ const Home = () => {
       <Helmet>
         <title>Home</title>
       </Helmet>
-      <div className="max-w-screen-xl">
+      <div className="max-w-screen-xl mx-auto">
         <Navbar></Navbar>
       </div>
       <div className="mt-[70px] md:mt-0">
